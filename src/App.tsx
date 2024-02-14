@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import AddEmployee from "./components/EmployeeForm";
+import EmployeeList  from "./components/ListEmployee";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>Employee Management System</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navigate to={'/list'} replace />} />
+          <Route path="/list" element={<EmployeeList />} />
+          <Route path="/add" element={<AddEmployee />} />
+          <Route path="/edit/:Id" element={<AddEmployee />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
