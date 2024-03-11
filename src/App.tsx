@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import AddEmployee from "./components/EmployeeForm";
 import EmployeeList  from "./components/ListEmployee";
-
+import './App.css'
 function App() {
   return (
     <>
-    <h1>Employee Management System</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to={'/list'} replace />} />

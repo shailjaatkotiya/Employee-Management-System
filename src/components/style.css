@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main, .Form{
+    margin: 1vh;
+    padding: 1vh;
+    text-align: center;
+    background-color:  hsla(240, 3%, 92%, 0.75);
+    color: #63544Eff;
+    font-size: 1.5rem;
+    font-family: Merriweather;
+    border-radius: 10px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Form{
+    font-size: 1rem;
+}
+
+.Main-Heading{
+    margin: 1vh;
+    padding: 1vh;
+    text-align: center;
+    background-color: #EBEBECff;
+    color: #63544Eff;
+    font-size: 2.5rem;
+    font-family: Merriweather;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.Sub-Heading{
+    margin: 1vh;
+    padding: 1vh 10vh;
+    text-align: center;
+    background-color: #EBEBECff;
+    color: #63544Eff;
+    font-family: Merriweather;
+    border-radius: 10px;
+    opacity: 1;
+    font-size: 1.5 rem;
+}
+
+.FormFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Field{
+    margin: 1vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border-radius: 5px;
+    padding: 1vh;
+
+}
+
+.List{
+    margin: 1vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#AddEmp{
+    font-size: 1rem;
+}
+
+.ListRow{
+    font-size: 1rem;
+}
